@@ -13,16 +13,6 @@
 ```	    				int i=WordFrequency(str2,jta1.getText());```  
 ```	    				JOptionPane.showMessageDialog(null, "该文字在古诗中出现的次数为:  "+i);}});}});```  
 	    
-	    
-  //词频统计函数
-	public static int WordFrequency(String str1,String str0) {
-		int i=0;
-		while(str1.indexOf(str0)!=-1) {
-			if(str1.indexOf(str0)!=-1) {
-				i++;
-				str1=str1.substring(str1.indexOf(str0)+str0.length(), str1.length());
-			}
-		}
-		return i;
-	}
-}
+上述程序是主方法里最主要的执行方法，设置了一个事件监听器-当鼠标点击时执行下面命令，既 *mouseClicked(MouseEvent e)* 。当鼠标点击后这个方法配合程序里其他方法可以实现：  
+	**1.** 输入需要格式化的字符串，获取字符串并进行格式化，化为有标点的字符串。
+	**2.** 将格式化的字符串赋值给新的StringBuffer类，并设置新的监听器，监听器内容为：当“查询”按钮按下时，可获取查询框里的字符串并进行检索，检索方法在下面会提到。
