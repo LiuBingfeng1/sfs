@@ -1,25 +1,19 @@
-大数据181 刘柄沣 2018310170
-//数组转换成字符串函数	
-	public static StringBuffer ArrayToString(String[] args) {
-		StringBuffer str=new StringBuffer();
-		for(int i=0;i<args.length;i++) {
-			str.append(args[i]);
-		}
-		return str;
-	//格式化输出函数  每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。
-	public static StringBuffer FormatOutput(StringBuffer str) {
-		StringBuffer str2=new StringBuffer();
-		for(int i=0;i<str.length()/7;i++) {
-			str2.append(str.substring(7*i, 7*(i+1)));
-			if((i+1)%2!=0) {
-				str2.append(",");
-			}
-			else {
-				str2.append("。").append("\n");
-			}
-		}
-		return str2;
-	}
+### 大数据181 刘柄沣 2018310170
+# //数组转换成字符串函数
+```			public void mouseClicked(MouseEvent e) {```  
+```	    		StringBuffer aa = new StringBuffer();//创建StringBuffer对象```  
+```	    		aa.append(Btn_click(shuru));```  
+```	    		StringBuffer str=aa;```  
+```	    		StringBuffer str1=new StringBuffer();```  
+```	    		str1=FormatOutput(str);```  
+```	    		String str2=new String(str1);```  
+```	    		jta.append(str2);```  
+```	    		btn.addActionListener(new ActionListener(){```  
+```	    			public void actionPerformed(ActionEvent arg0) {```  
+```	    				int i=WordFrequency(str2,jta1.getText());```  
+```	    				JOptionPane.showMessageDialog(null, "该文字在古诗中出现的次数为:  "+i);}});}});```  
+	    
+	    
   //词频统计函数
 	public static int WordFrequency(String str1,String str0) {
 		int i=0;
